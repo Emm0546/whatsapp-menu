@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,30 +16,40 @@
 
   <body>
     <main class="menu-container">
+      <div class="language-switch">
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+        <button type="button" class="lang-button active" data-lang="fr">
+          FR
+        </button>
+      </div>
+
       <header class="restaurant-header">
-        <p class="restaurant-label">WELCOME TO</p>
+        <p class="restaurant-label" data-i18n="welcome">WELCOME TO</p>
         <h1>Chez Maman<span>.</span></h1>
-        <p class="restaurant-description">
+
+        <p class="restaurant-description" data-i18n="description">
           Authentic Ivorian food, made with love.
         </p>
-        <div class="opening-status">● Open for orders</div>
+
+        <div class="opening-status" data-i18n="open">● Open for orders</div>
       </header>
 
-      <!-- Menu section -->
       <section class="menu-section">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">OUR MENU</p>
-            <h2>Choose your meal</h2>
+            <p class="eyebrow" data-i18n="menu">OUR MENU</p>
+            <h2 data-i18n="choose">Choose your meal</h2>
           </div>
-          <span class="menu-count">03 ITEMS</span>
+
+          <span class="menu-count" data-i18n="count">03 ITEMS</span>
         </div>
 
-        <!-- Food item 1 -->
         <label class="food-card">
           <div class="food-info">
-            <h3>Chicken Attiéké</h3>
-            <p>Grilled chicken served with fresh attiéké.</p>
+            <h3 data-i18n="chicken">Chicken Attiéké</h3>
+            <p data-i18n="chickenDesc">
+              Grilled chicken served with fresh attiéké.
+            </p>
             <strong>3,500 FCFA</strong>
           </div>
 
@@ -49,15 +59,17 @@
               class="food-checkbox"
               value="3500"
               data-name="Chicken Attiéké"
+              data-name-fr="Attiéké au poulet"
             />
           </div>
         </label>
 
-        <!-- Food item 2 -->
         <label class="food-card">
           <div class="food-info">
-            <h3>Garba Special</h3>
-            <p>Fresh attiéké with tuna and spicy onions.</p>
+            <h3 data-i18n="garba">Garba Special</h3>
+            <p data-i18n="garbaDesc">
+              Fresh attiéké with tuna and spicy onions.
+            </p>
             <strong>1,500 FCFA</strong>
           </div>
 
@@ -67,15 +79,15 @@
               class="food-checkbox"
               value="1500"
               data-name="Garba Special"
+              data-name-fr="Garba spécial"
             />
           </div>
         </label>
 
-        <!-- Food item 3 -->
         <label class="food-card">
           <div class="food-info">
-            <h3>Grilled Fish</h3>
-            <p>Fresh grilled fish with alloco.</p>
+            <h3 data-i18n="fish">Grilled Fish</h3>
+            <p data-i18n="fishDesc">Fresh grilled fish with alloco.</p>
             <strong>5,000 FCFA</strong>
           </div>
 
@@ -85,29 +97,29 @@
               class="food-checkbox"
               value="5000"
               data-name="Grilled Fish"
+              data-name-fr="Poisson braisé"
             />
           </div>
         </label>
       </section>
 
-      <!-- Order summary -->
       <section class="order-summary">
         <div class="summary-row">
-          <span>Selected items</span>
+          <span data-i18n="selected">Selected items</span>
           <span id="item-count">0</span>
         </div>
 
         <div class="summary-row total-row">
-          <span>Total</span>
+          <span data-i18n="total">Total</span>
           <strong id="total-price">0 FCFA</strong>
         </div>
 
         <button id="order-button" disabled>
-          Order via WhatsApp
+          <span data-i18n="order">Order via WhatsApp</span>
           <span>↗</span>
         </button>
 
-        <p class="summary-note">
+        <p class="summary-note" data-i18n="note">
           Your order will be sent directly to our WhatsApp.
         </p>
       </section>
