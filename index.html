@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore our menu and order directly on WhatsApp."
+    />
+
+    <title>Chez Maman | Digital Menu</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="menu-container">
+      <header class="restaurant-header">
+        <p class="restaurant-label">WELCOME TO</p>
+        <h1>Chez Maman<span>.</span></h1>
+        <p class="restaurant-description">
+          Authentic Ivorian food, made with love.
+        </p>
+        <div class="opening-status">● Open for orders</div>
+      </header>
+
+      <!-- Menu section -->
+      <section class="menu-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">OUR MENU</p>
+            <h2>Choose your meal</h2>
+          </div>
+          <span class="menu-count">03 ITEMS</span>
+        </div>
+
+        <!-- Food item 1 -->
+        <label class="food-card">
+          <div class="food-info">
+            <h3>Chicken Attiéké</h3>
+            <p>Grilled chicken served with fresh attiéké.</p>
+            <strong>3,500 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="3500"
+              data-name="Chicken Attiéké"
+            />
+          </div>
+        </label>
+
+        <!-- Food item 2 -->
+        <label class="food-card">
+          <div class="food-info">
+            <h3>Garba Special</h3>
+            <p>Fresh attiéké with tuna and spicy onions.</p>
+            <strong>1,500 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="1500"
+              data-name="Garba Special"
+            />
+          </div>
+        </label>
+
+        <!-- Food item 3 -->
+        <label class="food-card">
+          <div class="food-info">
+            <h3>Grilled Fish</h3>
+            <p>Fresh grilled fish with alloco.</p>
+            <strong>5,000 FCFA</strong>
+          </div>
+
+          <div class="food-selection">
+            <input
+              type="checkbox"
+              class="food-checkbox"
+              value="5000"
+              data-name="Grilled Fish"
+            />
+          </div>
+        </label>
+      </section>
+
+      <!-- Order summary -->
+      <section class="order-summary">
+        <div class="summary-row">
+          <span>Selected items</span>
+          <span id="item-count">0</span>
+        </div>
+
+        <div class="summary-row total-row">
+          <span>Total</span>
+          <strong id="total-price">0 FCFA</strong>
+        </div>
+
+        <button id="order-button" disabled>
+          Order via WhatsApp
+          <span>↗</span>
+        </button>
+
+        <p class="summary-note">
+          Your order will be sent directly to our WhatsApp.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
